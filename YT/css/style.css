@@ -1,0 +1,762 @@
+@charset "utf-8";
+h2 { 
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+img { 
+    display: block;
+}
+button { 
+    cursor: pointer;
+    display: block;
+    border: none;
+    background-color: transparent;
+}
+/******* header start *******/
+header { 
+    background-color: #FF0000;
+}
+.header_wrap { 
+    width: 62.5%;
+    height: 100px;
+    margin: 0 auto;
+    max-width:1600px;
+    min-width:1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.header_wrap h1 {
+    height: 100px;
+    width: 100px;
+} 
+.header_wrap h1 > a > img { 
+    width: 100px;
+    height: 100px;
+}
+
+/******* gnb *******/
+.gnb { 
+    margin-top: 50px;
+}
+.gnb ul { 
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+}
+.gnb ul > li { 
+    padding: 0 60px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;  
+}
+.gnb .home_nav { 
+    color: #fff;
+}
+.gnb ul > li img { 
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.gnb ul > li:last-child > a {
+    text-align: center;
+    line-height: 16px;
+    display: flex;
+}
+.gnb .search_open { 
+    position: absolute;
+    top: 40%;
+    left: 120px;
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    display: none;
+}
+.gnb .search_open button { 
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    width: 30px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.gnb .search_open input { 
+    background-color: #FF0000;
+    width: 60%;
+    border: none;
+    margin-left: 80px;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    height: 70%;
+    outline: 1px solid ;
+}
+.gnb .search_open  input::placeholder { 
+    color: #fff;
+}
+
+/******** account *******/
+.account {
+    position: relative;
+
+}
+.account a > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.account .acc_info { 
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    z-index: 50;
+    width: 300px;
+    display: flex;
+    align-content: center;
+    display: none;
+}
+.acc_info ul > li { 
+    border-bottom: 1px solid #1A1A1A;
+    padding: 5px 0 ;
+}
+.acc_info ul > li > h3 { 
+    padding: 10px 15px 10px;
+    
+}
+.acc_info ul > .info_top > h3:hover { 
+    background-color: transparent;
+}
+.acc_info ul > li > h3:hover { 
+    background-color: #969696;
+}
+.acc_info .info_top { 
+    display: flex;
+}
+.acc_info ul > li:first-child >h3 { 
+    padding-left: 5px;
+}
+.info_top img{ 
+    width: 40px;
+    height: 40px;
+}
+.info_top  p { 
+    color: #3ea6ff;
+    margin: 10px 0 0 0;
+    font-weight: 400;
+}
+.info-top .change a { 
+    width: 100%;
+    position: relative;
+}
+.acc_info .change > a > span  { 
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+/******* main_visual start ******/
+.content { 
+    width: 62.5%;
+    margin: 50px auto 0;
+    max-width:1600px;
+    min-width:1000px;
+}
+.main_visual { 
+    width: 100%;
+    position: relative;
+}
+.slide_wrap article{ 
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    z-index: 4;
+    overflow: hidden;
+}
+.slide_wrap article > h3 { 
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;  
+    z-index: 1;
+}
+
+.slide_wrap article > h3 > span { 
+    font-family: 'Roboto', sans-serif;
+}
+.slide_wrap article > img { 
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 2;
+    cursor: pointer;
+}
+.slide_wrap .mv { 
+    width: 100%;
+    margin: 0 auto;
+}
+.slide_wrap article > div > img{
+    position: relative;
+    width: 100%;
+    left: 10%;
+    height: 300px;
+    opacity: 0.5;
+}
+
+.controls { 
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: -10px;
+    top: 50%;
+    display: flex;
+    justify-content:space-between;
+    z-index: 1;
+}
+
+.mv_play { 
+    position: absolute;
+    top: 100px;
+    width: 62.5%;
+    margin: 40px auto 0;
+    max-width:1600px;
+    min-width:1000px;
+    z-index: 1;
+    background-color: linear-gradient(green, white ,green );
+    display: none;
+}
+.mv_play > .mvplay_wrap {
+    width: 80%;
+    height: calc(80% - 20px);
+    margin: 0 auto;
+}
+.nowplay_btn {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin: 40px 0 ;
+}
+.nowplay_btn > a { 
+    display: flex;
+    margin: 0 auto ;
+}
+.nowplay_btn  button { 
+    width: 300px;
+    border: none;
+    border-radius: 300px;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#FF0000;
+    text-align: center;
+    font-size: 16px;
+}
+.play_mp3 { 
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+.play_mp3 > img { 
+    width: 60%;
+    height: 70%;
+    margin: 0 auto;
+}
+.play_mp3 > audio { 
+    width: 60%;
+    margin: 40px 0 20px 20%;
+    border: none;
+    background-color: transparent;
+}
+.play_mv { 
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    display: none;
+}
+.play_mv > video { 
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    display: block;
+}
+.algorithm_song {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+.algorithm ul > li { 
+    margin: 20px 0;
+}
+.algorithm ul > li > a { 
+    display: flex;
+}
+.algorithm ul > li > a > .tit { 
+    width: 60px;
+    height: 60px;
+}
+.algorithm ul > li > a > p { 
+    margin-left: 40px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.algorithm ul > li > a > p > span { 
+    font-family: 'Noto Sans KR', sans-serif;  
+}
+.mvbox_closed { 
+    position: absolute;
+    top: 170px;
+    left: 20%;
+    z-index: 999;
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.mvbox_closed:hover { 
+    color: #FF0000;
+}
+.the_song:hover,.the_mv:hover { 
+    background-color: #FF0000;
+    color: #fff;
+}
+/******* content start *******/
+#now {
+    width: 62.5%;
+    margin: 30px auto 40px;
+    max-width:1600px;
+    min-width:1000px;
+    position: relative;
+}
+#now button { 
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: transparent;
+    border: none;
+    align-content: center;
+    font-family: 'Noto Sans KR', sans-serif;  
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+    cursor: pointer;
+}
+#now img{
+     width: 184px;
+     height: 184px;
+     display: block;
+     border-radius: 18px;
+}
+#now .now_song ul { 
+    width: 100%;
+}
+.now_song h3 { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.now_song h3 > span { 
+    font-family: 'Noto Sans KR', sans-serif;  
+}
+.now_song p > span {
+    font-family: 'Noto Sans KR', sans-serif;  
+} 
+.now_song ul > li { 
+    display: flex;
+    justify-content: space-between;
+    width: 184px;
+    height: 244px; 
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.now_song ul > li h3 { 
+    width: 184px;
+    height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #1A1A1A;
+}
+.now_song ul > li p { 
+    color: #969696;
+}
+.now_song > ul > li > ul { 
+    margin: 0 20px
+}
+.now_song > ul > li > ul { 
+    position: relative;
+}
+.now_song > ul > li:first-child > ul {
+      margin-left: 0;
+      padding-right: 20px;
+}
+.now_song > ul > li:last-child > ul{
+    margin-left: 0;
+    padding-right: 20px;
+}
+#now img:last-child { 
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 30%;
+    right: 20%;
+}
+/********* often start ***********/
+#often { 
+    width: 62.5%;
+    margin: 0 auto;
+    max-width:1600px;
+    min-width:1000px;
+    position: relative;
+}
+#often button { 
+    position: absolute;
+    top: 0;
+    left: 130px;
+    background-color: transparent;
+    border: none;
+    align-content: center;
+    font-family: 'Noto Sans KR', sans-serif;  
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+    cursor: pointer;
+}
+#often img { 
+    width: 184px;
+    height: 184px;
+    border-radius: 18px;
+}
+#often img:last-child{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 30%;
+    right: 20%;
+}
+/******** like artist *********/
+#like_artist { 
+    width: 62.5%;
+    margin: 0 auto;
+    max-width:1600px;
+    min-width:1000px;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+#like_artist .slide_like p { 
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+#like_artist .bx-viewport {
+    width: 184px;
+}
+#like_artist .slide_like a > .art { 
+    width: 184px;
+    height: 244px;
+    margin-right: 40px;
+}
+#like_artist .slide_like img { 
+    width: 184px;
+    height: 184px;
+    border-radius: 184px;
+}
+#like_artist .slide_art, .bx-clone {
+    width: 184px !important;
+    margin-right: 40px ;
+}
+#like_artist .slide_like { 
+    display: flex;
+}
+#like_artist .controls { 
+    position: absolute;
+    width: 100%;
+    left: -3%;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+    z-index: 1;
+}
+#like_artist > .controls > button { 
+    background-color: transparent;
+    border: none;
+    z-index: 0;
+}
+@media all and (max-width:767px) {
+    #like_artist { 
+        width: 100%;
+    }
+    #like_artist .slide_like img { 
+        width: 130px;
+        height: 130px;
+        border-radius: 184px;
+    }
+    #like_artist > .controls img { 
+        width: 60px;
+    }
+    #like_artist .slide_like p { 
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #like_artist .slide_like a > .art { 
+        width: 100%;
+        height: 244px;
+        margin-right: 0px;
+    }
+    #like_artist .slide_art, .bx-clone {
+        width: 130px !important;
+        margin-right: 10px ;
+    }
+    #like_artist .controls { 
+        position: absolute;
+        width: 75%;
+        left: -2%;
+        top: 35%;
+        display: flex;
+        justify-content: space-between;
+        flex: 3;
+        z-index: 1;
+    }
+}
+/********** hot music ********/
+#hot_music { 
+    width: 62.5%;
+    margin: 40px auto 0;
+    max-width:1600px;
+    min-width:1000px;
+    position: relative;
+    height: 500px;
+}
+#hot_music button { 
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background-color: transparent;
+    border: none;
+    align-content: center;
+    font-family: 'Noto Sans KR', sans-serif;  
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.hot_song { 
+    width: 100%;
+}
+.hot_song > ul > li { 
+    display: flex;
+}
+.hotitem_box { 
+    width: 220px;
+    height: 100px;
+    position: relative;
+    margin: 0 40px 40px 0;
+
+}
+.hotitem_box img { 
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+}
+.hotitem_box h3 { 
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+.hotitem_box h3 > span { 
+    font-family: 'Noto Sans KR', sans-serif;  
+}
+.hotitem_box h3 > p { 
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #969696;
+}
+.hotitem_box h3 > p > span { 
+    font-family: 'Noto Sans KR', sans-serif;  
+}
+@media all and (max-width:767px) {
+    #hot_music { 
+        max-width: 100%;
+        min-width: 485px;
+        margin: 0;
+    }
+}
+
+/*********** play song ***********/
+.play_song { 
+    width: 62.5%;
+    height: 50px;
+    margin: 0 auto;
+    max-width:1600px;
+    min-width:1000px;
+    display: none;
+    flex: 999;
+}
+.play_song > .music_box{ 
+    width: 62.5%;
+    height: 70px;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    background-color: #FF0000;
+    z-index: 999;
+}
+.music_box > img { 
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+.music_box > p { 
+    text-align: left;
+    margin: 10px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+}
+.music_box > audio { 
+    margin-top: 20px;
+    width: 62%;
+}
+.playsong_closed{
+    position: absolute;
+    top: 38%;
+    right: 10px;
+    cursor: pointer;
+}
+/*
+font-family: 'Noto Sans KR', sans-serif;  
+font-family: 'Roboto', sans-serif;
+*/
+@media all and (max-width:767px) {
+    *{ 
+        margin: 0;
+        padding: 0;
+    }
+    .header_wrap { 
+        width: 100%;
+        height: 50%;
+        min-width: 485px;
+        max-width: 767px;
+    }
+    .header_wrap h1 > a > img { 
+        width: 50%;
+        height: 50%;
+        margin: 29% 20px ;
+    }
+    .gnb ul > li { 
+        padding: 0 30px ;
+    }
+    .account a > img { 
+        width: 40px;
+        height: 40px;
+        margin: 40px 10px;
+    }
+    .content { 
+        width: 100%;
+        margin: 50px auto 0;
+        max-width: 767px;
+        min-width: 485px;
+    }
+    .slide_wrap article { 
+        width: 100%;
+    }
+    .slide_wrap article > h3 { 
+        top: 40%;
+        left: 40%;
+        width: auto;
+    }
+    .slide_wrap article > div > img { 
+    position: relative;
+    width: 100%;
+    left: 0%;
+    height: 300px;
+    opacity: 0.5;
+    }
+    .main_visual .controls { 
+        left: 0;
+    }
+    .main_visual .controls img{ 
+        width: 40px;
+        justify-content: space-between;
+    }
+    #now { 
+        width: 100%;
+        max-width: 767px;
+        min-width: 485px;
+    }
+    #now img { 
+        width: 100px;
+        height: 100px;
+    }
+    #now img:last-child { 
+        width: 30px;
+        height: 30px;
+        bottom: 35%;
+        left: 40%;
+    }
+    .now_song ul > li { 
+        height: 150px;
+        width: 100%;
+    }
+    .now_song > ul > li:first-child > ul { 
+        padding: 0;
+        margin: 0 7px;
+    }
+    .now_song > ul > li:last-child > ul { 
+        padding: 0;
+        margin: 0 7px;
+    }
+    .now_song ul > li h3 { 
+        width: 100px;
+    }
+    #often { 
+        width: 100%;
+        max-width: 767px;
+        min-width: 485px;
+    }
+    #often img { 
+        width: 100px;
+        height: 100px;
+        border-radius: 18px;
+    }
+    #often img:last-child {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        bottom: 35%;
+        left: 60%;
+    }
+    #often > .now_song { 
+        width: 100%;
+        margin: 0;
+    }
+    .now_song > ul {
+        width: 100%;
+    }
+    .now_song > ul > li:first-child > ul {
+        margin-left: 0;
+        padding-right: 0px;
+    }
+    .now_song > ul > li:last-child > ul{
+        margin-left: 0;
+        padding-right: 0px;
+    }
+}

@@ -1,0 +1,847 @@
+@charset "utf-8";
+img { 
+    display: block;
+}
+body { 
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    min-width: 1000px;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+}
+header { 
+    width: 100%;
+    height: 100vh;
+}
+
+.video_section { 
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+video { 
+    width: 100%;
+    opacity: 0.5;
+}
+.header_wrap { 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+.gnb { 
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.gnb > ul { 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 50px;
+    flex: 1 1 2;
+}
+.gnb li { 
+    width: 100%;
+    padding-right: 12%;
+    text-align: center;
+    white-space:nowrap;
+}
+.gnb li > a { 
+    width: 100%;
+}
+.gnb li:hover { 
+    color: #2F80ED;
+}
+.waviy {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    -webkit-box-reflect: below -20px linear-gradient(transparent,rgba(0,0,0,.2));
+    font-size: 45px;
+}
+.waviy span {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 45px;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes waviy {
+    0%,40%,100% {
+    transform: translateY(0)
+    }
+    20% {
+    transform: translateY(-30px)
+    }
+}
+#header_wrap > button { 
+    position: relative;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+}
+#header_wrap > button:hover { 
+    cursor: pointer;
+    background: #2F80ED;
+    color: #fff;
+}
+/*****info*****/
+
+#info { 
+    width: 100vw;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+.info_wrap { 
+    width: 80%;
+    height: 98%;
+    margin: 0 auto ;
+    border: 10px solid #dbdbdb;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.memoji { 
+    text-align: center;
+}
+.memoji h2 { 
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.memoji > .my_info { 
+    display: flexbox;
+    font-size: 18px;
+}
+.memoji > .my_info > p { 
+    margin-bottom: 10px;
+}
+#moji:hover { 
+    content: url('../images/hello.png');
+}
+.info_wrap > .info_text { 
+    position: absolute;
+    top: 6%;
+    left: 25%;
+    text-align: center;
+}
+.info_text > h2 { 
+    font-size: 40px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 600;
+}
+.skill { 
+    width: 100%;
+    margin: 40px 0 0 50px;
+}
+.skill > ul { 
+    display: flex;
+    margin:  10px 0;    
+}
+.skill > ul > li { 
+    margin-right: 80px;
+}
+.skill li > h2 { 
+    font-size: 30px;
+    color: #e9311a;
+    margin-bottom: 40px;
+}
+.skill li img { 
+    width: 40px;
+}
+.skill li h3 { 
+    margin: 0 5px;
+    width: 60px;
+    font-size: 18px;
+}
+.skill li > p { 
+    width: 70px;
+    font-size: 1.5em;
+    margin-right: 50px;
+    white-space:nowrap;
+}
+.skill ul > li > ul > li { 
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.skill ul > li > div { 
+    width: 300px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-right: 20px;
+    position: relative;
+}
+.skill ul > li > div > .html {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 20px;
+    border-radius: 9px;
+    animation: html;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 5s;
+}
+@-webkit-keyframes html { 
+    0% {
+        width: 0; 
+        background-color : #fe8c00;
+    }
+    100% { 
+        background-color: #f83600;
+    }
+}
+.skill ul > li > div > .css {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 20px;
+    border-radius: 9px;
+    animation: css;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes css { 
+    0% {
+        width: 0; 
+        background-color: #FFE47A;
+    }
+    100% { 
+        background-color: #3D7EAA;
+    }
+}
+.skill ul > li > div > .js {
+    position: absolute;
+    top: 0;
+    width: 70%;
+    height: 20px;
+    border-radius: 9px;
+    animation: js;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes js { 
+    0% {
+        width: 0; 
+        background-color: #fff;
+    }
+    100% { 
+        background-color: #fffc00;
+    }
+}
+.skill ul > li > div > .jq {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 20px;
+    border-radius: 9px;
+    animation: jq;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes jq { 
+    0% {
+        width: 0; 
+        background-color: #fceabb;
+    }
+    100% { 
+        background-color: #f8b500;
+    }
+}
+.skill ul > li > div > .ps {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 20px;
+    border-radius: 9px;
+    animation: ps;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes ps { 
+    0% {
+        width: 0; 
+        background-color: #56CCF2;
+    }
+    100% { 
+        background-color: #2F80ED;
+    }
+}
+.skill ul > li > div > .ai {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 20px;
+    border-radius: 9px;
+    animation: ai;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes ai { 
+    0% {
+        width: 0; 
+        background-color: #603813;
+    }
+    100% { 
+        background-color: #b29f94;
+    }
+}
+.hover_wrap { 
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: rotate(30deg);
+    text-align: center;
+    font-size: 20px;
+    animation-name: mtxt;
+    animation-duration: 1s;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+}
+@keyframes mtxt{ 
+    50% { 
+        opacity: 0;
+    }
+}
+#moji:hover + .hover_wrap { 
+    content: attr('.mini_text');
+}
+/************** portfolio section*****************/
+
+#prot_one { 
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F2F2;
+    position: relative;
+}
+.prot_wrap { 
+    width: 80%;
+    height: 98%;
+    margin: 0 auto ;
+    border: 10px solid #dbdbdb;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.prot_wrap > h2 { 
+    position: absolute;
+    top: 6%;
+    left: 32%;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 40px;
+}
+.prot_wrap > .h_me { 
+    position: absolute;
+    top: 18%;
+    left: 22%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+    animation-name: up_down;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction:alternate;
+}
+@keyframes up_down{ 
+    0% { 
+        top : 18%;
+    }
+    50% {
+        color: #5d6063;
+        top: 19%;
+    }
+    100% { 
+        top: 18%;
+    }
+}
+.mac { 
+    width: 50%;
+    height: 70%;
+    position: relative;
+    background-image: url('../images/imac.png');
+    background-size: cover;
+    z-index: 5;
+    left: 2%;
+    top: 10%;
+    overflow: hidden;
+}
+.mac > .ym_mockup { 
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 31px;
+    left: 31px;
+    overflow: hidden;
+}
+.ym_mockup > img { 
+    width: 91.8%;
+    overflow: hidden;
+    transition: all 3s;
+}
+.ym_mockup > img:hover { 
+    transform: translateY(-54%);
+    /* top: 100%; */
+}
+.pf_info { 
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.pf_info > .pf_title { 
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 20px;
+    line-height: 25px;
+}
+.section { 
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+.section > ul { 
+    display: flex;
+}
+.section li { 
+    margin-right: 70px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.section li:hover{ 
+    background-color: #2F80ED;
+    color: #fff;
+    border: 1px solid #2F80ED;
+}
+.ym_style { 
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+.ym_style > .guide { 
+    height: 80%;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 60%;
+    height: 90%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    box-shadow: -0.1rem 0rem 1rem 0.1rem var(--b4);
+    z-index: 50;
+}
+.ym_style img { 
+    width: 100%;
+}
+.ym_exit { 
+    position: absolute;
+    top: 70px;
+    right: 23%;
+    z-index: 60;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}
+
+
+/************2ne portfolio***************/
+
+
+#prot_two { 
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F2F2;
+    position: relative;
+}
+.prot_wrap { 
+    width: 80%;
+    height: 98%;
+    margin: 0 auto ;
+    border: 10px solid #dbdbdb;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.prot_wrap > h2 { 
+    position: absolute;
+    top: 6%;
+    left: 32%;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 40px;
+}
+.prot_wrap > .h_me { 
+    position: absolute;
+    top: 18%;
+    left: 22%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+    animation-name: up_down;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction:alternate;
+}
+@keyframes up_down{ 
+    0% { 
+        top : 18%;
+    }
+    50% {
+        color: #5d6063;
+        top: 19%;
+    }
+    100% { 
+        top: 18%;
+    }
+}
+.mac { 
+    width: 50%;
+    height: 70%;
+    position: relative;
+    background-image: url('../images/imac.png');
+    background-size: cover;
+    z-index: 5;
+    left: 2%;
+    top: 10%;
+    overflow: hidden;
+}
+.mac > .ym_mockup { 
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 31px;
+    left: 31px;
+    overflow: hidden;
+}
+.ym_mockup > img { 
+    width: 91.8%;
+    overflow: hidden;
+    transition: all 3s;
+}
+.ym_mockup > img:hover { 
+    transform: translateY(-54%);
+    /* top: 100%; */
+}
+.pf_info { 
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.pf_info > .pf_title { 
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 20px;
+    line-height: 25px;
+}
+.section { 
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+.section > ul { 
+    display: flex;
+}
+.section li { 
+    margin-right: 70px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.section li:hover{ 
+    background-color: #2F80ED;
+    color: #fff;
+    border: 1px solid #2F80ED;
+}
+.ob_style { 
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+.ob_style > .guide { 
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 60%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    box-shadow: -0.1rem 0rem 1rem 0.1rem var(--b4);
+    z-index: 50;
+}
+.ob_style img { 
+    width: 100%;
+}
+.ob_exit { 
+    position: absolute;
+    top: 70px;
+    right: 23%;
+    z-index: 60;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}
+.mac > .ob_mockup { 
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 31px;
+    left: 31px;
+    overflow: hidden;
+}
+.ob_mockup > img { 
+    width: 91.8%;
+    overflow: hidden;
+    transition: all 3s;
+}
+.ob_mockup > img:hover { 
+    transform: translateY(-61%);
+    /* top: 100%; */
+}
+#contact { 
+    width: 100vw;
+    height: 100vh;
+}
+.contact_wrap { 
+    width: 100%;
+    height: 100%;
+    background-color: #dbdbdb;
+    margin: 0 auto;
+    position: relative;
+}
+.contact_wrap > h2 { 
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 46px;
+    text-align: center;
+    animation-name: beat;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition: all 1.5s;
+}
+@keyframes beat { 
+    0% { 
+        transform: scale(0);
+    }
+    50% { 
+        color: #2F80ED;
+    }
+    100% { 
+        transform: scale(2);
+    }
+}
+.contact_wrap > .my_contact { 
+    position: absolute;
+    bottom: 20%;
+    left: 43%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.my_contact > img { 
+    position: absolute;
+    left: -75%;
+    bottom: -10px;
+    width: 300px;
+    height: 300px;
+}
+.my_contact > a { 
+    padding: 10px 0;
+}
+#top_btn { 
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 15%;
+    right: 5%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 70px;
+    border: 1px solid #2F80ED;
+    background-color: #2F80ED;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+footer { 
+    width: 100vw;
+    height: 100px;
+    background-color: #8ebbf7;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px;
+    color: #dbdbdb;
+}
+/**************MOBILE VER********/
+@media screen and (max-width : 767px) { 
+    body { 
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header { 
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .video_section { 
+        height: 100%;
+    }
+    video { 
+        width: 767px;
+    }
+    .gnb {
+        width: 100%; 
+    }
+    .gnb > ul { 
+        width: 100%;
+        margin-left: 10px;
+        font-size: 0.5em;
+        justify-content: space-between;
+    }
+    .gnb li { 
+        width: 100%;
+        padding-right: 0px;
+    }
+    .gnb li h1 > img { 
+        height: 20px;
+    }
+    .waviy { 
+        font-size: 0.5em;
+        top: 25%;
+        left: 12%;
+    }
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        color: #000;
+        font-size: 40px;
+    }
+    #header_wrap > button { 
+        position: absolute;
+        top: 38%;
+        left: 45%;
+        height: 27px;
+    }
+    #info { 
+        width: 767px;
+        background-color: transparent;
+    }
+    .info_wrap { 
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+    #moji { 
+        width: 200px;
+        height: 200px;
+    }
+    .info_warp > .info_text { 
+        position: absolute;
+        left:0%;
+        text-align: left;
+    }
+    .info_text > h2 { 
+        font-size: 1.3em;
+    }
+    .skill ul > li  { 
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+    .skill ul > li > div { 
+        width: 100px;
+    }
+    .hover_wrap { 
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    #prot_one { 
+        width: 100vw;
+        margin: 0;
+        background-color: transparent;
+    }
+    .prot_wrap { 
+        width: 767px;
+        margin: 0;
+        background-color: #F2F2F2;
+    }
+    .prot_wrap > h2 { 
+        font-size: 1.5em;
+        left: 25%
+    }
+    .prot_wrap > .h_me { 
+        margin: 0;
+        position: absolute;
+        top: 1000px;
+        left: 7%;
+        font-size: 27px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+    }
+    .mac { 
+        width: 35%;
+        height: 52.5%;
+        background-image: url('../images/imac.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 10%;
+        
+    }
+    .mac > .ym_mockup { 
+        width: 100%;
+        height: 31.5%;
+        position: absolute;
+        top: 2.3%;
+        left: 11px;
+        overflow: hidden;
+    }
+    #top_btn { 
+        bottom: 15%;
+        right: 28%;
+    }
+    .guide { 
+        height: 773px;
+    }
+    #prot_tow {
+        width: 100vw;
+    }
+}
+/*
+font-family: 'Do Hyeon', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+
+*/

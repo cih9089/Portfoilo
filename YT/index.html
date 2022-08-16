@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/audio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Youtube Music</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bxslider/js/jquery.bxslider.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <h1><a href="#"><img src="./img/logo_white_theme.png" alt="logo"></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="./index.html" class="home_nav">홈</a></li>
+                    <li><a href="./sub1.html" class="round_nav">둘러보기</a></li>
+                    <li><a href="./sub2.html" class="inven">보관함</a></li>
+                    <li>
+                        <a href="#" class="search"><img src="./img/search.png" alt="search">검색</a>
+                    </li>
+                </ul>
+                <div class="search_open">
+                        <button class="closed"><a href="#" alt="뒤로">&larr;</a></button>
+                        <input type="search" placeholder="검색" size="90" autofocus>
+                </div>
+            </nav>
+            <div class="account">
+                <a href="#"><img src="./img/pro.png" alt="프로필"></a>
+                <div class="acc_info">
+                    <ul>
+                        <li class="info_top">
+                            <img src="./img/pro.png" alt="porfile">
+                            <h3>XX_XX
+                                <br>
+                                <p><a href="#">Google 계정 관리</a></p>
+                            </h3>
+                            
+                        </li>
+                        <li>
+                            <h3><a href="#">내 채널</a></h3>
+                            <h3><a href="#">유료 멤버십</a></h3>
+                            <h3 class="change"><a href="#">계정전환<span>&rsaquo;</span></a></h3>
+                            <h3><a href="#">로그아웃</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="#">시청 기록</a></h3>
+                            <h3><a href="#">설정</a></h3>
+                            <h3><a href="#">서비스 약관 및 개인정보처리방침</a></h3>
+                            <h3><a href="#">고객센터</a></h3>
+                            <h3><a href="#">의견보내기</a></h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="main_visual">
+            <h2>오늘의 뮤직비디오</h2>
+            <div class="slide_mv">
+                <div class="slide_wrap">
+                    <a href="#" class="slide_1">
+                        <article >
+                            <h3><span>PSY - That That</span></h3>
+                            <img src="./img/play_hover_btn.png" alt="play" class="psy_mv">
+                            <div class="MV"><img src="./img/title/psy.jpg" alt="mv1"  class="psy_mv"></div>
+                        </article>
+                    </a>
+                </div>
+                <div class="slide_wrap">
+                    <a href="#">
+                        <article>
+                            <h3><span>DAVICH</span> - 팡파레</h3>
+                            <img src="./img/play_hover_btn.png" alt="play">
+                            <div class="MV"><img src="./img/siger/davichi.jpg" alt="mv2" class="davichi_mv"></div>
+                        </article>
+                    </a>
+                </div>
+                <div class="slide_wrap">
+                    <a href="#">
+                        <article>
+                            <h3>경서 - 나의 <span>X</span> 에게</h3>
+                            <img src="./img/play_hover_btn.png" alt="play">
+                            <div class="MV"><img src="./img/siger/Kyoungseo.jpg" alt="mv3" class="ks_mv"></div>
+                        </article>
+                    </a>
+                </div>
+                <div class="slide_wrap">
+                    <a href="#">
+                        <article>
+                            <h3>임창정 - 트로트가 싫어요</h3>
+                            <img src="./img/play_hover_btn.png" alt="play">
+                            <div class="MV"><img src="./img/siger/imchangjung.jpg" alt="mv3" class="imcj_mv"></div>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prev"><img src="./img/prev.png" alt="previous slide"></button>
+                <button class="next"><img src="./img/next.png" alt="next slide"></button>
+            </div>
+        </div>
+        <div class="mv_play">
+            <div class="mvplay_wrap">
+                <div class="nowplay_btn">
+                    <a href="#"><button class="the_song">음악</button></a>
+                    <a href="#"><button class="the_mv">동영상</button></a>
+                </div>
+                <div class="play_mp3">
+                    <img src="./img/title/psy.jpg" alt="That That">
+                    <audio controls preload="auto">
+                        <source src="./mp3/psy.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <div class="play_mv">
+                    <video controls played preload="auto">
+                        <source src="./mv/psy.mp4" type="video/mp4">
+                        PSY-That That.mv
+                    </video>
+                </div>
+                <div class="algorithm">
+                    <div class="algorithm_song">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/title/abcd.jpg" alt="abcd" class="tit">
+                                    <p class="a_song">abcdefu <br>
+                                        GAYLE · 2:49</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/title/run2u.jpg" alt="run2u" class="tit">
+                                    <p class="a_song">RUN2U <br>STAYC<span>스테이씨</span> · 3:34</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/title/jessi.jpg" alt="zoom" class="tit">
+                                    <p class="a_song">ZOOM <br><span>제시</span> · 2:55
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/title/일레븐.jpg" alt="ELEVEN" class="tit">
+                                    <p class="a_song">ELEVEN <br>IVE<span>아이브</span> · 2:55</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/title/tomboy.jpg" alt="tomboy" class="tit">
+                                    <p class="a_song">TOMBOY <br> (G)I-DLE · 2:55</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/title/스마일리.jpg" alt="SMILEY" class="tit">
+                                    <p class="a_song">SMILEY(feat. BIBI) <br> YENA <span>예나</span> · 2:54</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/title/러브다이브.jpg" alt="LOVE DIVE" class="tit">
+                                    <p class="a_song">LOVE DIVE <br>IVE <span>(아이브)</span> · 2:58</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mvbox_closed">
+            <p class="back">&#128473;</p>
+        </div>
+    </div>
+    <div id="now">
+        <h2>지금 많이 듣는 곡</h2>
+        <button><a href="#">&plus; 더보기</a></button>
+        <div class="now_song">
+            <ul>
+                <li>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/psy.jpg" alt="album">
+                            <h3>That That (feat.SUGA of BTS)</h3>
+                            <p>PSY</p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/러브다이브.jpg" alt="album">
+                            <h3>LOVE DIVE</h3>
+                            <p>IVE<span>(아이브)</span></p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                        </a></li>
+                    </ul>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/봄여름가을겨울.jpg" alt="album">
+                            <h3><span>봄여름가을겨울</span></h3>
+                            <p>Big Bang</p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                        </a></li>
+                    </ul>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/사실나는.jpg" alt="album">
+                            <h3><span>사실나는</span></h3>
+                            <p><span>경서·예지</span></p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                        </a></li>
+                    </ul>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/다정히.jpg" alt="album">
+                            <h3><span>다정히 내이름을 부르면</span></h3>
+                            <p><span>경서·예지(Feat.전건호)</span></p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                        </a></li>
+                    </ul>
+                    <li>
+                        <ul>
+                            <li class="item_box">
+                                <a href="#">
+                                <img src="./img/title/INVU.jpg" alt="album">
+                                <h3>INVU</h3>
+                                <p><span>태연</span></p>
+                                <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                            </a></li>
+                        </ul>
+                        <ul>
+                            <li class="item_box">
+                                <a href="#">
+                                <img src="./img/title/jessi.jpg" alt="album">
+                                <h3>ZOOM</h3>
+                                <p><span>제시</span></p>
+                                <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                            </a></li>
+                        </ul>
+                        <ul>
+                            <li class="item_box">
+                                <a href="#">
+                                <img src="./img/title/run2u.jpg" alt="album">
+                                <h3>RUN2U</h3>
+                                <p>STAYC<span>(스테이씨)</span></p>
+                                <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                            </a></li>
+                        </ul>
+                        <ul>
+                            <li class="item_box">
+                                <a href="#">
+                                <img src="./img/title/스마일리.jpg" alt="album">
+                                <h3>SMILEY(Feat.BIBI)</h3>
+                                <p>YENA<span>(최예나)</span></p>
+                                <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                            </a></li>
+                        </ul>
+                        <ul>
+                            <li class="item_box">
+                                <a href="#">
+                                <img src="./img/title/일레븐.jpg" alt="album">
+                                <h3>ELEVEN</h3>
+                                <p>IVE<span>(아이브)</span></p>
+                                <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                            </a></li>
+                        </ul>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="often">
+        <h2>자주듣는 곡 </h2>
+        <button><a href="#">&plus; 더보기</a></button>
+        <div class="now_song">
+            <ul>
+                <li>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/abcd.jpg" alt="album">
+                            <h3>abcdefu</h3>
+                            <p>GAYLE</p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/이예준.jpg" alt="album">
+                            <h3><span>그날에 나는 맘이 편했을까</span></h3>
+                            <p><span>이예준</span></p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                        </a></li>
+                    </ul>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/가나다라.jpg" alt="album">
+                            <h3>GANADARA</h3>
+                            <p><span>박재범</span>(Jay Park)</p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                        </a></li>
+                    </ul>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/오늘같은밤이면.jpg" alt="album">
+                            <h3><span>오늘같은 밤이면</span></h3>
+                            <p>2Bic(feat.<span>다비치</span>)</p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                        </a></li>
+                    </ul>
+                    <ul>
+                        <li class="item_box">
+                            <a href="#">
+                            <img src="./img/title/마크툽.jpg" alt="album">
+                            <h3><span>별처럼 빛나는 너에게</span></h3>
+                            <p><span>마크툽</span></p>
+                            <img src="./img/play_hover_btn.png" alt="paly" class="play_btn">
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>     
+    </div>
+    <div id="like_artist">
+        <h2>좋아요 누른 아티스트</h2>
+        <div class="slide_like clearfix">
+            <div class="slide_art">
+                <a href="#" target="_blank">
+                    <div class="art">
+                        <img src="./img/siger/aespa.jpg" alt="sing1" class="artist_pro">
+                        <p>에스파</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide_art">
+                <a href="#" target="_blank">
+                    <div class="art">
+                        <img src="./img/siger/bts.jpg" alt="sing2" class="artist_pro">
+                        <p>BTS</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide_art">
+                <a href="#" target="_blank">
+                    <div class="art">
+                        <img src="./img/siger/IU.jpg" alt="sing3" class="artist_pro">
+                        <p>IU</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide_art">
+                <a href="#" target="_blank">
+                    <div class="art">
+                        <img src="./img/siger/davichi.jpg" alt="sing4" class="artist_pro">
+                        <p>다비치</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide_art">
+                <a href="#" target="_blank">
+                    <div class="art">
+                        <img src="./img/siger/Kyoungseo.jpg" alt="sing5" class="artist_pro">
+                        <p>경서</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide_art">
+                <a href="#" target="_blank">
+                    <div class="art">
+                        <img src="./img/siger/gunho.jpg" alt="sing5" class="artist_pro">
+                        <p>전건호</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="like_prev"><img src="./img/prev.png" alt="previous slide"></button>
+            <button class="like_next"><img src="./img/next.png" alt="next slide"></button>
+        </div>
+    </div>
+    <div id="hot_music">
+        <h2>인기</h2>
+        <button><a href="#">&plus; 더보기</a></button>
+        <div class="hot_song">
+            <ul>
+                <li>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/psy.jpg" alt="album">
+                            <h3>That That (prod. & feat. SUGA of BTS)
+                                <p>PSY</p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/러브다이브.jpg" alt="album">
+                            <h3>LOVE DIVE
+                                <p>IVE<span>(아이브)</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/봄여름가을겨울.jpg" alt="album">
+                            <h3><span>봄여름가을겨울</span>
+                                <p>Big Bang</p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/사실나는.jpg" alt="album">
+                            <h3><span>사실 나는</span>
+                                <p><span>경서·예지</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/INVU.jpg" alt="album">
+                            <h3>INVU
+                                <p><span>태연</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/jessi.jpg" alt="album">
+                            <h3>ZOOM
+                                <p><span>제시</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/run2u.jpg" alt="album">
+                            <h3>RUN2U
+                                <p>STAYC<span>(스테이씨)</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/스마일리.jpg" alt="album">
+                            <h3>SMILEY
+                                <p>YENA<span>최예나</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/다정히.jpg" alt="album">
+                            <h3><span>다정히 내 이름을 부르면</span>
+                                <p><span>경서·예지</span>(feat.<span>전건호</span>)</p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/일레븐.jpg" alt="album">
+                            <h3>ELEVEN
+                                <p>IVE<span>(아이브)</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/사랑인가봐.jpg" alt="album">
+                            <h3><span>사랑인가봐</span>
+                                <p><span>멜로망스</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="hotitem_box">
+                            <a href="#">
+                            <img src="./img/title/레드벨벳.jpg" alt="album">
+                            <h3>Feel My Rhythm
+                                <p><span>레드벨벳</span></p>
+                            </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="play_song">
+        <div class="music_box">
+            <img src="./img/title/psy.jpg" alt="thathat">
+            <p>THAT THAT (prod. SUGA of BTS)
+                <br>  PSY
+            </p>
+            <audio id="mymusic" src="./mp3/psy.mp3" controls next>
+            </audio >
+            <div class="playsong_closed">
+                <p class="back">&#128473;</p>
+            </div>
+        </div>
+    </div>
+<script src="./js/main.js"></script>
+</body>
+</html> 

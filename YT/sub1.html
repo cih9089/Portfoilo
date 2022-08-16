@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/audio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/substyle.css">
+    <title>Youtube Music</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bxslider/js/jquery.bxslider.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <h1><a href="index.html"><img src="./img/logo_white_theme.png" alt="logo"></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="./index.html" class="home_nav">홈</a></li>
+                    <li><a href="./sub1.html" class="round_nav">둘러보기</a></li>
+                    <li><a href="./sub2.html" class="inven">보관함</a></li>
+                    <li>
+                        <a href="#" class="search"><img src="./img/search.png" alt="search">검색</a>
+                    </li>
+                </ul>
+                <div class="search_open">
+                        <button class="closed"><a href="#" alt="뒤로">&larr;</a></button>
+                        <input type="search" placeholder="검색" size="90" autofocus>
+                </div>
+            </nav>
+            <div class="account">
+                <a href="#"><img src="./img/pro.png" alt="프로필"></a>
+                <div class="acc_info">
+                    <ul>
+                        <li class="info_top">
+                            <img src="./img/pro.png" alt="porfile">
+                            <h3>XX_XX
+                                <br>
+                                <p><a href="#">Google 계정 관리</a></p>
+                            </h3>
+                            
+                        </li>
+                        <li>
+                            <h3><a href="#">내 채널</a></h3>
+                            <h3><a href="#">유료 멤버십</a></h3>
+                            <h3 class="change"><a href="#">계정전환<span>&rsaquo;</span></a></h3>
+                            <h3><a href="#">로그아웃</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="#">시청 기록</a></h3>
+                            <h3><a href="#">설정</a></h3>
+                            <h3><a href="#">서비스 약관 및 개인정보처리방침</a></h3>
+                            <h3><a href="#">고객센터</a></h3>
+                            <h3><a href="#">의견보내기</a></h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contents">
+        <div class="contents_wrap">
+            <div id="category">
+                <div class="category_wrap">
+                    <ul>
+                        <li>
+                            <a href="#"><div>&#9835; 새 앨범</div></a>
+                        </li>
+                        <li>
+                            <a href="#"><div>↝ 차트</div></a>
+                        </li>
+                        <li>
+                            <a href="#"><div><span>&#9787;</span> 분위기 및 장르</div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="live_tag">
+                <div class="livetag_wrap">
+                    <h2>#실시간태그</h2>
+                    <div class="slide_tag">
+                        <div class="slide_wrap ">
+                            <a href="#">
+                                <div class="tag"># 파티</div>
+                            </a>
+                        </div>
+                        <div class="slide_wrap">
+                            <a href="#">
+                                <div class="tag"># 운전할 때</div>
+                            </a>
+                        </div>
+                        <div class="slide_wrap">
+                            <a href="#">
+                                <div class="tag"># 심심할 때</div>
+                            </a>
+                        </div>
+                        <div class="slide_wrap">
+                            <a href="#">
+                                <div class="tag"># 데이트할 때</div>
+                            </a>
+                        </div>
+                        <div class="slide_wrap">
+                            <a href="#">
+                                <div class="tag"># 노래부르고 싶을 때</div>
+                            </a>
+                        </div>
+                        <div class="slide_wrap">
+                            <a href="#">
+                                <div class="tag"># 울적할 때</div>
+                            </a>
+                        </div>
+                        <div class="slide_wrap">
+                            <a href="#">
+                                <div class="tag"># 운동</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button class="tag_prev"><img src="./img/prev.png" alt="previous slide"></button>
+                        <button class="tag_next"><img src="./img/next.png" alt="next slide"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="mychart">
+                <div class="mychart_wrap">
+                    <div class="tit">
+                        <h2>나만의 차트 <span>Top</span> 30</h2>
+                        <p><a href="#">&plus;모두 보기</a></p>
+                    </div>
+                    <div class="list">
+                        <div class="list_left">
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>1</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list1.jpg" alt="list">
+                                    </div>
+                                    <h4>나만 몰랐던 이야기 <br> <p> 아이유 </p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>2</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list2.jpg" alt="list">
+                                    </div>
+                                    <h4><span>Chandelier</span><br><p><span>sia</span></p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>3</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list3.jpg" alt="list">
+                                    </div>
+                                    <h4>2588 , 3544 <br> <p>전건호</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>4</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list4.jpg" alt="list">
+                                    </div>
+                                    <h4>11:11 <br> <p>태연</p> </h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>5</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list5.jpg" alt="list">
+                                    </div>
+                                    <h4><span>YOU AND I <br> </span> <p>WSG워너비 조별경원 (대청봉)</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>6</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list6.jpg" alt="list">
+                                    </div>
+                                    <h4><span>Square (2017) </span> <br> <p>백예린</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>7</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list7.jpg" alt="list">
+                                    </div>
+                                    <h4>스물다섯, 스물하나 <br><p>자우림</p> </h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>8</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list8.jpg" alt="list">
+                                    </div>
+                                    <h4>검은행복 <br><p>윤미래</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>9</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list9.jpg" alt="list">
+                                    </div>
+                                    <h4><span>With you</span> <br><p>지민(방탄소년단) X 하성운</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3 class="list_ten">10</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list10.jpg" alt="list">
+                                    </div>
+                                    <h4>내가 아니라도 <br> <p>주호</p></h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list_center">
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>11</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list11.jpg" alt="list">
+                                    </div>
+                                    <h4>너의 번호를 누르고 <br><p>김나영</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>12</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list12.jpg" alt="list">
+                                    </div>
+                                    <h4><span>Dynamite</span> <br><p>방탄소년단</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>13</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list13.jpg" alt="list">
+                                    </div>
+                                    <h4><span>2002</span> <br> <p><span>Anne-Marie</span></p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>14</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list14.jpg" alt="list">
+                                    </div>
+                                    <h4>홀로 <br> <p>이하이</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>15</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list15.jpg" alt="list">
+                                    </div>
+                                    <h4>밤이 되니까 <br> <p>펀치</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>16</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list16.jpg" alt="list">
+                                    </div>
+                                    <h4>취하고싶다( <span>Prod.</span>전태익) <br><p>황인욱</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>17</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list17.jpg" alt="list">
+                                    </div>
+                                    <h4><span>Counting Stars (feat. Beenzino)</span> <br> <p><span>BE.O</span>(비오)</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>18</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list18.jpg" alt="list">
+                                    </div>
+                                    <h4><span>illa illa</span> (일라 일라) <br> <p><span>JUNIEL</span></p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>19</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list19.jpg" alt="list">
+                                    </div>
+                                    <h4>한사람 <br><p>허각</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>20</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list20.jpg" alt="list">
+                                    </div>
+                                    <h4>봄 <span>to</span> 러브 <br><p>10<span>cm</span></p></h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list_right">
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>21</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list21.jpg" alt="list">
+                                    </div>
+                                    <h4>어떻게 이별까지 사랑하겠어, 널 사랑하는 거지 <br><p><span>AKMU</span>(악뮤)</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>22</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list22.jpg" alt="list">
+                                    </div>
+                                    <h4>봄날 <br><p>방탄소년단</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>23</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list23.jpg" alt="list">
+                                    </div>
+                                    <h4>서랍 <br> <p>10<span>cm</span></p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>24</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list24.jpg" alt="list">
+                                    </div>
+                                    <h4>보통연애 (<span>Feat.</span>박보람)<br><p>박경</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>25</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list25.jpg" alt="list">
+                                    </div>
+                                    <h4>힘내 <br> <p>소녀시대</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>26</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list26.jpg" alt="list">
+                                    </div>
+                                    <h4>묘해,너와 <br> <p>어쿠스틱콜라보</p> </h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>27</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list27.jpg" alt="list">
+                                    </div>
+                                    <h4><span> Lost Stars</span> <br> <p><span> Adam Levine</span></p> </h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>28</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list28.jpg" alt="list">
+                                    </div>
+                                    <h4>술 한잔 해요 <br> <p>경서(경서예지) & <span>MJ</span>(써니사이드)</p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>29</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list29.jpg" alt="list">
+                                    </div>
+                                    <h4><span> POP/STARS</span> <br> <p><span>K/DA</span> </p></h4>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="list_wrap">
+                                    <h3>30</h3>
+                                    <div class="list_img">
+                                        <img src="./img/list/list30.jpg" alt="list">
+                                    </div>
+                                    <h4>그때가 좋았어 <br> <p>케이시</p></h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="new_album">
+                <div class="album_wrap">
+                    <div class="album_tit">
+                        <h2>최신 앨범</h2>
+                        <p><a href="#">&plus;모두 보기</a></p>
+                    </div>
+                    <div class="album_slider">
+                        <div class="albumslider_wrap">
+                            <a href="#">
+                                <img src="./img/album/ab1.jpg" alt="new_album">
+                                <h4> 지금 난 <br><p>오반</p></h4>
+                            </a>
+                        </div>
+                        <div class="albumslider_wrap">
+                            <a href="#">
+                                <img src="./img/album/ab2.jpg" alt="new_album">
+                                <h4>강승원 이집 <span>PART.5</span> - 널 사랑하니까 <span>(Because I Love You)</span> <br> <p>수지,강승원</p></h4>
+                            </a>
+                        </div>
+                        <div class="albumslider_wrap">
+                            <a href="#">
+                                <img src="./img/album/ab3.jpg" alt="new_album">
+                                <h4>봄날의 캐럴 <span>(Marry ME) </span><span>(</span>결혼백서 <span>OST Part.1)</span> <br><p>한승윤</p></h4>
+                            </a>
+                        </div>
+                        <div class="albumslider_wrap">
+                            <a href="#">
+                                <img src="./img/album/ab4.jpg" alt="new_album">
+                                <h4>춘정지란 <span>OST Part.3</span> <br><p>알리 <span>ALi</span></p></h4>
+                            </a>
+                        </div>
+                        <div class="albumslider_wrap">
+                            <a href="#">
+                                <img src="./img/album/ab5.jpg" alt="new_album">
+                                <h4>핫소스 가요제(알뽀칠) <br><p>김농밀, 김선응</p></h4>
+                            </a>
+                        </div>
+                        <div class="albumslider_wrap">
+                            <a href="#">
+                                <img src="./img/album/ab6.jpg" alt="new_album">
+                                <h4>어쩌다 2 <br><p>브레이브걸스</p></h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="alb_controls">
+                        <button class="ab_prev"><img src="./img/prev.png" alt="previous slide"></button>
+                        <button class="ab_next"><img src="./img/next.png" alt="next slide"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./js/main.js"></script>
+</body>
+</html> 
